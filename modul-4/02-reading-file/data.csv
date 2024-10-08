@@ -1,6 +1,4 @@
-[
-  { Age: '25', Name: 'John Smith', ID: '12345', Profession: 'Engineer' },
-  { Age: '32', Name: 'Alice Williams', ID: '67890', Profession: 'Teacher' },
-  { Age: '41', Name: 'Bob Johnson', ID: '11223', Profession: 'Doctor' },
-  { Age: '23', Name: 'Claire Brown', ID: '44556', Profession: 'Artist' }
-]
+   Age: '25', Name: 'John Smith', ID: '12345', Profession: 'Engineer' 
+   Age: '32', Name: 'Alice Williams', ID: '67890', Profession: 'Teacher' 
+  Age: '41', Name: 'Bob Johnson', ID: '11223', Profession: 'Doctor' 
+   Age: '23', Name: 'Claire Brown', ID: '44556', Profession: 'Artist' 

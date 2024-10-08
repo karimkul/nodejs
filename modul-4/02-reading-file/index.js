@@ -4,16 +4,21 @@ class Data {
         return fs.readFileSync(fileUrl, "utf-8");
     }
     parse(content) {
-        return content.splite("/n");
+        return content.split("\n");
     }
+
     parseRow(row) {
-        return row.splite(",");
+        return row.trim().split(",");
     }
     format(fileUrl) {
         const content = this.read(fileUrl);
+        console.log("1", content);
         const all = this.parse(content);
+        console.log(all);
         const header = this.parseRow(all[0]);
+        console.log(header);
         const rows = all.slice(1);
+        console.log(rows);
 
         const formattedData = rows.map((row) => {
             const personArr = this.parseRow(row);
@@ -32,5 +37,5 @@ class Data {
 }
 
 const dataProcessor = new Data();
-const result = dataProcessor.format("./02-reading-file/data.csv");
+const result = dataProcessor.format("data.csv");
 console.log(result);
