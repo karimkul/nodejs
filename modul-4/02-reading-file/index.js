@@ -12,13 +12,9 @@ class Data {
     }
     format(fileUrl) {
         const content = this.read(fileUrl);
-        console.log("1", content);
         const all = this.parse(content);
-        console.log(all);
         const header = this.parseRow(all[0]);
-        console.log(header);
         const rows = all.slice(1);
-        console.log(rows);
 
         const formattedData = rows.map((row) => {
             const personArr = this.parseRow(row);
